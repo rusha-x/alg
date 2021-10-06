@@ -14,14 +14,29 @@ fun main() {
         input.add(a)
         i += 1
     }
-    input.sort()
+//    println(max)
+
+}
+
+fun maxPrice(treasures : MutableList<Int>, m : Int): Int{
+    treasures.sort()
     var max = 0
     var y = 0
     while (y < m) {
-        val b = input.get(y)
+        val b = treasures.get(y)
         max += b
         y += 1
     }
-    println(max)
-
+    return max
 }
+
+
+
+
+
+
+
+
+
+
+
